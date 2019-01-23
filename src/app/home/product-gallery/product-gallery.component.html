@@ -1,0 +1,32 @@
+<!-- product gallery area start -->
+<section class="product-gallery pt-100" id="shop">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="sec-title">
+					<h2>Our Aquaponic Product Gallery</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+						standard dummy text ever</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-sm-6" *ngFor="let product of products; let i = index">
+				<div class="single-product max-width-320">
+					<div class="single-product-img">
+						<img [src]="product.image" alt="">
+						<div class="product-img-overlay">
+							<a href="#" class="aquaponic-btn">Add to cart <i class="fa fa-shopping-cart"></i></a>
+						</div>
+					</div>
+					<div class="single-product-info">
+						<p><a href="product-details.html">{{product.title}}</a></p>
+						<h4>$46</h4>
+						<a href="" class="buy-product">Buy Now</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section><!-- product gallery area end -->

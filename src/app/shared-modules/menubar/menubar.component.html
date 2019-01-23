@@ -1,0 +1,44 @@
+<!-- menu area start -->
+<div class="menubar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-5">
+        <div class="logo">
+          <a href="index.html"><img src="http://backend.iamfood.life/uploads/settings/{{ logoImg?.img }}" alt="logo"/></a>
+        </div>
+      </div>	
+      <div class="col-md-9 col-sm-7">
+        <div class="responsive-menu"></div>
+        <div class="mainmenu">
+          <ul id="primary-menu">
+            <li class="" *ngFor="let item of menuItems">
+							<!-- <a href="#" routerLink="/{{ item.controller }}">{{ item.name }}</a> -->
+							<a href="#">{{ item.name }}</a>
+						</li>
+					</ul>
+					<!-- <ul id="primary-menu">
+									<li class="active"><a href="">Home</a></li>
+									<li><a href="#about">About Us</a></li>
+									<li>
+											<a href="products.html"
+						>Products <i class="fa fa-angle-down"></i >
+					</a>
+											<ul>
+													<li><a href="cart.html">Cart</a></li>
+													<li><a href="cart-overview.html">Overview</a></li>
+													<li><a href="checkout.html">Checkout</a></li>
+											</ul>
+									</li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#store">Store</a></li>
+									<li><a href="#shop">Shop</a></li>
+									<li><a href="team.html">Team</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#contact">Contact</a></li>
+							</ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- menu area end -->

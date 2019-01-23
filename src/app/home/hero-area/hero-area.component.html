@@ -1,0 +1,46 @@
+<!-- hero area start -->
+<section class="hero-area">
+		<div class="hero-area-slide">
+				<owl-carousel *ngIf="sliderLoaded" [options]="heroSliderOptions" [carouselClasses]="['owl-theme', 'sliding']">
+					<div class="hero-area-single-slide" *ngFor="let item of sliderItems" [ngStyle]="{'background-image':'url(' + 'http://backend.iamfood.life/uploads/settings/' + item.img + ')'}">
+						<div class="container"> 
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<h1>{{ item.header }}</h1>
+									<p>{{ item.short_text }}</p>
+									<a href="#" class="aquaponic-btn">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="hero-area-single-slide">
+						<div class="container">
+							<div class="row  justify-content-center">
+								<div class="col-lg-8">
+									<h1>Aquaponic House</h1>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled make type specimen book.</p>
+									<a href="#" class="aquaponic-btn">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-area-single-slide">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<h1>Aquaponic House</h1>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled make type specimen book.</p>
+									<a href="#" class="aquaponic-btn">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					</owl-carousel>
+				</div>
+</section><!-- hero area end -->
+<!-- style="background-image: url(http://backend.iamfood.life/uploads/settings/{{item.img}}) -->
+<!-- style="background-image: url(./assets/img/hero-area/slide-bg1.jpg)" -->
